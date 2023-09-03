@@ -1,0 +1,133 @@
+name: flutter_application
+description: A new Flutter project.
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.1.0-163.1.beta <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter  
+  flutter_svg: ^2.0.7
+  url_launcher: ^6.1.12
+  smooth_page_indicator: ^1.1.0
+  syncfusion_flutter_charts: ^22.2.10
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/img/promotion_banner/grilled_chicken_kebab_banner.jpeg
+
+    - assets/img/avocado_salad/avocado_salad_main.jpeg
+    - assets/img/avocado_salad/avocado_salad_introduction_style1.jpeg
+    - assets/img/avocado_salad/avocado_salad_introduction_style2_1.jpeg
+    - assets/img/avocado_salad/avocado_salad_introduction_style2_2.jpeg
+
+    - assets/img/cucumber_salad/cucumber_salad_main.jpeg
+    - assets/img/cucumber_salad/cucumber_salad_introduction_style1.jpeg
+    - assets/img/cucumber_salad/cucumber_salad_introduction_style2_1.jpeg
+    - assets/img/cucumber_salad/cucumber_salad_introduction_style2_2.jpeg
+
+    - assets/img/mushroom_salad/mushroom_salad_main.jpeg
+    - assets/img/mushroom_salad/mushroom_salad_introduction_style1.jpeg
+    - assets/img/mushroom_salad/mushroom_salad_introduction_style2_1.jpeg
+    - assets/img/mushroom_salad/mushroom_salad_introduction_style2_2.jpeg
+
+    - assets/img/ricotta_cheese_salad/ricotta_cheese_salad_main.jpeg
+    - assets/img/ricotta_cheese_salad/ricotta_cheese_salad_introduction_style1.jpeg
+    - assets/img/ricotta_cheese_salad/ricotta_cheese_salad_introduction_style2_1.jpeg
+    - assets/img/ricotta_cheese_salad/ricotta_cheese_salad_introduction_style2_2.jpeg
+    
+    - assets/img/baeksuk/baeksuk_main.jpeg
+    - assets/img/baeksuk/baeksuk_introduction_style1.jpeg
+    - assets/img/baeksuk/baeksuk_introduction_style2_1.jpeg
+    - assets/img/baeksuk/baeksuk_introduction_style2_2.jpeg
+
+    - assets/img/grilled_chicken_kebab/grilled_chicken_kebab_main.jpeg
+    - assets/img/grilled_chicken_kebab/grilled_chicken_kebab_introduction_style1.jpeg
+    - assets/img/grilled_chicken_kebab/grilled_chicken_kebab_introduction_style2_1.jpeg
+    - assets/img/grilled_chicken_kebab/grilled_chicken_kebab_introduction_style2_2.jpeg
+
+    - assets/img/grilled_chicken_kebab/grilled_chicken_kebab_main.jpeg
+    - assets/img/grilled_chicken_kebab/grilled_chicken_kebab_introduction_style1.jpeg
+    - assets/img/grilled_chicken_kebab/grilled_chicken_kebab_introduction_style2_1.jpeg
+    - assets/img/grilled_chicken_kebab/grilled_chicken_kebab_introduction_style2_2.jpeg
+
+    - assets/img/roast_chicken_sandwich/roast_chicken_sandwich_main.jpeg
+    - assets/img/roast_chicken_sandwich/roast_chicken_sandwich_introduction_style1.jpeg
+    - assets/img/roast_chicken_sandwich/roast_chicken_sandwich_introduction_style2_1.jpeg
+    - assets/img/roast_chicken_sandwich/roast_chicken_sandwich_introduction_style2_2.jpeg
+
+    - assets/img/roast_chicken_wrap/roast_chicken_wrap_main.jpeg
+    - assets/img/roast_chicken_wrap/roast_chicken_wrap_introduction_style1.jpeg
+    - assets/img/roast_chicken_wrap/roast_chicken_wrap_introduction_style2_1.jpeg
+    - assets/img/roast_chicken_wrap/roast_chicken_wrap_introduction_style2_2.jpeg
+
+    - assets/img/crispy_chicken_wrap/crispy_chicken_wrap_main.jpeg
+    - assets/img/crispy_chicken_wrap/crispy_chicken_wrap_introduction_style1.jpeg
+    - assets/img/crispy_chicken_wrap/crispy_chicken_wrap_introduction_style2_1.jpeg
+    - assets/img/crispy_chicken_wrap/crispy_chicken_wrap_introduction_style2_2.jpeg
+    
+    - assets/img/ingredients/avocado.jpeg
+    - assets/img/ingredients/black_olive.jpeg
+    - assets/img/ingredients/button_mushroom.jpeg
+    - assets/img/ingredients/carrot.jpeg
+    - assets/img/ingredients/cashew_nut.jpeg
+    - assets/img/ingredients/cherry_tomato.jpeg
+    - assets/img/ingredients/chicken_stock.jpeg
+    - assets/img/ingredients/chicken.jpeg
+    - assets/img/ingredients/chicory.jpeg
+    - assets/img/ingredients/chives.jpeg
+    - assets/img/ingredients/corn.jpeg
+    - assets/img/ingredients/cucumber.jpeg
+    - assets/img/ingredients/chicken.jpeg
+    - assets/img/ingredients/fried_chicken.jpeg
+    - assets/img/ingredients/garlic.jpeg
+    - assets/img/ingredients/ginseng.jpeg
+    - assets/img/ingredients/green_onion.jpeg
+    - assets/img/ingredients/kale.jpeg
+    - assets/img/ingredients/lettuce.jpeg
+    - assets/img/ingredients/mini_baguette.jpeg
+    - assets/img/ingredients/onion.jpeg
+    - assets/img/ingredients/pomegranate.jpeg
+    - assets/img/ingredients/potato.jpeg
+    - assets/img/ingredients/red_onion.jpeg
+    - assets/img/ingredients/ricotta_cheese.jpeg
+    - assets/img/ingredients/roasted_chicken_breast.jpeg
+    - assets/img/ingredients/sesame.jpeg
+    - assets/img/ingredients/tea_bag.jpeg
+    - assets/img/ingredients/tomato.jpeg
+    - assets/img/ingredients/tortilla.jpeg
+    - assets/img/ingredients/walnut.jpeg
+
+    - assets/icon/company_logo/Facebook.svg
+    - assets/icon/company_logo/Instagram.svg
+    - assets/icon/company_logo/Kakaotalk.svg
+    - assets/icon/company_logo/Twitter.svg
+    - assets/icon/company_logo/YouTube.svg
+  fonts:
+    - family: LotteriaDdag
+      fonts:
+        - asset: assets/font/LotteriaDdag/ddag.otf
+          weight: 700
+    - family: NotoSansKR
+      fonts:
+        - asset: assets/font/NotoSansKR/NotoSansKR-Black.otf
+          weight: 900
+        - asset: assets/font/NotoSansKR/NotoSansKR-Bold.otf
+          weight: 700
+        - asset: assets/font/NotoSansKR/NotoSansKR-Medium.otf
+          weight: 500
+        - asset: assets/font/NotoSansKR/NotoSansKR-Regular.otf
+          weight: 400
+        - asset: assets/font/NotoSansKR/NotoSansKR-Light.otf
+          weight: 300
+        - asset: assets/font/NotoSansKR/NotoSansKR-Thin.otf
+          weight: 100
+
