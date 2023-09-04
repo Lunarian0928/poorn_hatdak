@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class CategoryIconBtn extends StatelessWidget {
-  final IconData iconShape;
+  final double height;
+  final String iconShape;
   final String btnName;
 
   const CategoryIconBtn({
     super.key,
+    required this.height,
     required this.iconShape,
     required this.btnName,
   });
@@ -13,18 +16,22 @@ class CategoryIconBtn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: (MediaQuery.of(context).size.width - 32.0) / 4,
+      height: height,
       padding: const EdgeInsets.symmetric(
-        horizontal: 20,
-        vertical: 16,
+        horizontal: 12.0,
+        vertical: 12.0,
       ),
       child: Column(
         children: [
-          Icon(
-            iconShape,
-            size: 36,
-            color: const Color(0xFF757575),
+          SvgPicture.asset(
+            'assets/icon/category/$iconShape.svg',
+            width: 32.0,
+            height: 32.0,
           ),
-          const SizedBox(height: 8),
+          const SizedBox(
+            height: 4.0,
+          ),
           Text(
             btnName,
             style: const TextStyle(

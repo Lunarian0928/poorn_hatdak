@@ -6,7 +6,7 @@ import 'product.dart';
 class SaleTheme {
   final String themeName;
 
-  SaleTheme({required this.themeName});
+  SaleTheme({this.themeName = ''});
 
   String getThemeName() {
     return themeName;

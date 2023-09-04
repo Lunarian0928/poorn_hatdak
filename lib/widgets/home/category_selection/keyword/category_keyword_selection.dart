@@ -2,7 +2,18 @@ import 'package:flutter/material.dart';
 import 'category_keyword_btn.dart';
 
 class CategoryKeywordSelection extends StatefulWidget {
-  const CategoryKeywordSelection({super.key});
+  final int selectedIndex;
+  final List<bool> isSelected;
+  final List<String> categoryList;
+
+  final void Function(int value) onPressed;
+  const CategoryKeywordSelection({
+    super.key,
+    required this.selectedIndex,
+    required this.isSelected,
+    required this.categoryList,
+    required this.onPressed,
+  });
 
   @override
   State<CategoryKeywordSelection> createState() =>
@@ -10,36 +21,6 @@ class CategoryKeywordSelection extends StatefulWidget {
 }
 
 class _CategoryKeywordSelectionState extends State<CategoryKeywordSelection> {
-  List<String> categoryList = [
-    '신상품',
-    '닭고기',
-    '샐러드·야채',
-    '소고기',
-    '돼지고기',
-    '계란',
-    '소스',
-    '고구마·감자',
-    '베이커리',
-  ];
-
-  late List<bool> isSelected;
-  int selectedIndex = 0;
-
-  @override
-  void initState() {
-    isSelected = List.generate(categoryList.length, (index) => false);
-    isSelected[selectedIndex] = true;
-    super.initState();
-  }
-
-  void toggleSelect(int index) {
-    setState(() {
-      isSelected[selectedIndex] = !isSelected[selectedIndex];
-      isSelected[index] = !isSelected[index];
-      selectedIndex = index;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -51,18 +32,18 @@ class _CategoryKeywordSelectionState extends State<CategoryKeywordSelection> {
         ),
         child: ToggleButtons(
           renderBorder: false,
-          isSelected: isSelected,
+          isSelected: widget.isSelected,
           color: const Color(0xFF757575),
           selectedColor: Colors.white,
           fillColor: Colors.transparent,
           splashColor: Colors.transparent,
-          onPressed: toggleSelect,
+          onPressed: widget.onPressed,
           children: [
-            for (int i = 0; i < categoryList.length; i++)
+            for (int i = 0; i < widget.categoryList.length; i++)
               CategoryKeyWordBtn(
-                btnName: categoryList[i],
-                isSelected: isSelected[i],
-                isLast: (i + 1 == categoryList.length) ? true : false,
+                btnName: widget.categoryList[i],
+                isSelected: widget.isSelected[i],
+                isLast: (i + 1 == widget.categoryList.length) ? true : false,
               ),
           ],
         ),

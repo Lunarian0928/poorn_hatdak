@@ -18,9 +18,7 @@ class _ExpandMoreBtnState extends State<ExpandMoreBtn> {
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {
-        widget.tapFunc();
-      },
+      onTap: widget.tapFunc,
       child: Container(
         padding: const EdgeInsets.all(8.0),
         decoration: const BoxDecoration(

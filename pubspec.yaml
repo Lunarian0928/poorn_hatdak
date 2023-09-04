@@ -106,6 +106,16 @@ flutter:
     - assets/img/ingredients/tortilla.jpeg
     - assets/img/ingredients/walnut.jpeg
 
+    - assets/icon/category/noun-cow-5602480.svg
+    - assets/icon/category/noun-cream-849977.svg
+    - assets/icon/category/noun-drumstick-836866.svg
+    - assets/icon/category/noun-eggs-852186.svg
+    - assets/icon/category/noun-pig-face-5602488.svg
+    - assets/icon/category/noun-presents-4266736.svg
+    - assets/icon/category/noun-radish-848066.svg
+    - assets/icon/category/noun-rice-1556443.svg
+    - assets/icon/category/noun-toast-836868.svg
+    
     - assets/icon/company_logo/Facebook.svg
     - assets/icon/company_logo/Instagram.svg
     - assets/icon/company_logo/Kakaotalk.svg
